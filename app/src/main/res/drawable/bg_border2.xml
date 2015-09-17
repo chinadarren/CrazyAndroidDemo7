@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gradient   &#45;&#45; 对应颜色渐变。 startcolor、endcolor就不多说了。 android:angle 是指从哪个角度开始变。-->
+<!--solid      &#45;&#45;  填充。-->
+<!--stroke   &#45;&#45;  描边。-->
+<!--corners  &#45;&#45;  圆角。-->
+<!--padding   &#45;&#45; 定义内容离边界的距离。 与android:padding_left、android:padding_right这些是一个道理。-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle"
+    >
+    <!--指定圆角矩形的4个圆角的半径-->
+    <!--android:Radius="20dp"                           设置四个角的半径-->
+    <!--android:topLeftRadius="20dp"              设置左上角的半径-->
+    <!--android:topRightRadius="20dp"           设置右上角的半径-->
+    <!--android:bottomLeftRadius="20dp"      设置右下角的半径-->
+    <!--android:bottomRightRadius="20dp"    设置左下角的半径-->
+    <coners
+        android:bottomLeftRadius="5px"
+        android:bottomRightRadius="20px"
+        android:topLeftRadius="20px"
+        android:topRightRadius="5px"
+        />
+    <!--指定边框线条的宽度和颜色-->
+    <stroke
+        android:width="4px"
+        android:color="#f0f"/>
+    <!--指定使用渐变背景颜色，使用sweep类型的渐变颜色从红色-绿色-蓝色-->
+    <gradient
+        android:centerColor="#0f0"
+        android:endColor="#00f"
+        android:startColor="#f00"
+        android:type="sweep"/>
+
+</shape>
